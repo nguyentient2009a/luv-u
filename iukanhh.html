@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghet kAnh</title>
+</head>
+
+<style>
+    body{
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/315063593_646493363819175_2106918930005050717_n.jpg?stp=dst-jpg_s206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=lBXvP4MX8g0AX_Dv1GH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTxGXFiS4B0nHAQ-ZVZAR526VvQQ9J8wPGFuvZoUqgI1A&oe=63937218");
+    }
+    .heart {
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        display: block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        animation: heart 1s ease infinite
+    }
+
+    @keyframes heart {
+        96% {
+            transform: translate(-50%,-50%) scale(.8,.8)
+        }
+        100% {
+            transform: translate(-50%,-50%) scale(1,1)
+        }
+    }
+
+    .heart div {
+        background: #ff0000;
+        width: 71px;
+        height: 126px;
+        top: 40px;
+        display: block;
+        position: absolute;
+        border-radius: 50%
+    }
+
+    .left {
+        left: 45px;
+        transform: rotate(330deg);
+    }
+
+    .right {
+        right: 45px;
+        transform: rotate(30deg);
+    }
+
+.img{
+    align-content: center;
+    width: 100%;
+}
+
+</style>
+<body>
+
+<div class="heart">
+
+    <div class="left"></div> 
+    <div class="right"></div> 
+</div>
+
+
+</body>
+</html>
